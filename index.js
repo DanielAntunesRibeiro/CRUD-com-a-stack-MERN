@@ -95,7 +95,7 @@ console.log('Conctando DB...')
     res.send('deletado com sucesso!')
   });
 
-  app.listen(3000, function() {
+  app.listen(process.env.PORT || 3000, function() {
       console.log('Servidor rodando => http://localhost:3000 para encerrar: CTRL+C')
   })
 }
