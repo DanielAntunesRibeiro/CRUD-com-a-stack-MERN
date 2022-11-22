@@ -1,6 +1,6 @@
 import "./ReadAll.css"
 
-function ReadAll () {
+function ReadAll() {
     return <div>ReadAll</div>
 }
 
