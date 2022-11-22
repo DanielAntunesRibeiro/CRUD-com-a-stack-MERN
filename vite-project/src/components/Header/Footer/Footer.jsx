@@ -1,9 +1,10 @@
 import "./Footer.css"
 
 function Footer () {
+    const anoAtual = new Date().getFullYear()
     return (
         <div className="Footer">
-            Todos os direitos reservados
+            {anoAtual} ~ todos os direitos reservados.
         </div>
     )
 }
