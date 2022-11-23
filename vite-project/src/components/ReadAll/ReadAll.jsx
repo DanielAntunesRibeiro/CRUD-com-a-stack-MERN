@@ -1,5 +1,6 @@
-import "./ReadAll.css"
+import './ReadAll.css'
 import ItemCard from '../ItemCard/ItemCard'
+import { Api } from '../../api/api'
 
 function ReadAll() {
     const itens = [
@@ -14,6 +15,11 @@ function ReadAll() {
             imagemUrl: "https://picsum.photos/200/200"
         }
     ]
+
+    const readAllUrl = Api.itens.readAll()
+    console.log(readAllUrl)
+    Api.buildApiGetRequest(readAllUrl)
+
     return (
         <div className='ReadAll'>
             {itens.map(function (item, index) {

@@ -2,6 +2,7 @@ const express = require('express')
 const { MongoClient, ObjectId } = require('mongodb')
 const url = 'mongodb+srv://admin:YzOCE9cR7TOWpyCV@cluster0.nxhs41w.mongodb.net/'
 const bancoDadosNome = 'ocean_jornada_full_nov_22'
+const cors = require('cors')
 
 // funcção assincrona para aguardar a conexão com o banco
 async function main() {
@@ -15,6 +16,9 @@ console.log('Conctando DB...')
   console.log('Conectado com sucesso!')
 
   const app = express()
+
+  //configurando CORS
+  app.use(cors())
 
   //sinalizamos que estamos usando JSON no Body
   app.use(express.json())

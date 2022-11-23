@@ -1,12 +1,12 @@
 export const Api = {
     baseUrl: 'http://localhost:3000/',
-    // baseUrl: 'https://server-crud-com-a-stack-mern.onrender.com',
+    // baseUrl: 'https://server-crud-com-a-stack-mern.onrender.com/',
 
     itens: {
-        endpoint: () => {
+        endpoint: function() {
             return Api.baseUrl + 'itens';
         },
-        readAll: () => {
+        readAll: function() {
             return this.endpoint() = '/';
         },
     },
