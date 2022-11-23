@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom'
-
 import './App.css'
 import Create from './components/Create/Create'
 import Footer from './components/Footer/Footer'
