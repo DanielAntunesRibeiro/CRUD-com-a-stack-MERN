@@ -27,7 +27,7 @@ export const Api = {
             method: "POST",
             body: JSON.stringify(body),
             headers: new Headers({
-                "Content-type": "aplication/json"
+                "Content-type": "application/json"
             }),
         })
     }
