@@ -7,7 +7,7 @@ export const Api = {
             return Api.baseUrl + 'itens';
         },
         readAll: function() {
-            return this.endpoint() = '/';
+            return this.endpoint() + '/';
         },
     },
 
