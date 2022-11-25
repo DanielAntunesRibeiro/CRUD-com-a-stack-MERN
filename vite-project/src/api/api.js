@@ -1,6 +1,6 @@
 export const Api = {
-    //baseUrl: 'http://localhost:3000/',
-    baseUrl: 'https://server-crud-com-a-stack-mern.onrender.com/',
+    baseUrl: 'http://localhost:3000/',
+    //baseUrl: 'https://server-crud-com-a-stack-mern.onrender.com/',
 
     itens: {
         endpoint: function() {
@@ -11,7 +11,10 @@ export const Api = {
         },
         create: function() {
             return this.endpoint() + '/';
-        }
+        },
+        delete: function (id) {
+            return this.endpoint() + '/' + id;
+        },
     },
 
     // Montar as requisições
@@ -34,8 +37,8 @@ export const Api = {
 
     // DELETE
     buildApiDeleteRequest: function (url) {
-        return fetch(url, {
-            method: "DELETE",
-        })
+      return fetch(url, {
+        method: "DELETE",
+      });
     },
 }
