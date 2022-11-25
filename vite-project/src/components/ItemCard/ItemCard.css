@@ -22,3 +22,27 @@
     margin: 0;
     margin-bottom: 1rem;
 }
+
+.ItemCard:hover .icon-delete {
+    display: initial;
+}
+
+.icon-delete {
+    display: none;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
+    color: #DC3545;
+    cursor: pointer; 
+}
+
+.icon-edit {
+    display: none;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
+    color: green;
+    cursor: pointer; 
+}

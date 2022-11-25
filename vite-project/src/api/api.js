@@ -30,5 +30,12 @@ export const Api = {
                 "Content-type": "application/json"
             }),
         })
-    }
+    },
+
+    // DELETE
+    buildApiDeleteRequest: function (url) {
+        return fetch(url, {
+            method: "DELETE",
+        })
+    },
 }

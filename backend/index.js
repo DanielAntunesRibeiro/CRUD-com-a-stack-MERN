@@ -66,7 +66,7 @@ console.log('Conctando DB...')
     // adiciona em itens com o push
     await collection.insertOne(item)
 
-    res.send('item criado com sucesso!')
+    res.send({ message: "Item criado com sucesso" })
   })
 
   // Endpoint [PUT] /itens/:id - UPDATE BY ID (Atualizar pelo ID)
@@ -82,7 +82,7 @@ console.log('Conctando DB...')
       {_id: new ObjectId(id) },
       { $set: item } )
 
-    res.send('item atualizado!')
+    res.send({ message: "Item atualizado com sucesso" })
   });
 
   // Endpoint [DELETE] /itens/:id - DELETE BY ID (Remover pelo ID)
@@ -96,7 +96,7 @@ console.log('Conctando DB...')
     })
 
     // Exibimos uma mensagem de sucesso
-    res.send('deletado com sucesso!')
+    res.send({ message: "Item deletado com sucesso" })
   });
 
   app.listen(process.env.PORT || 3000, function() {
